@@ -18,6 +18,17 @@ module.exports = {
         'denary':'#64748b', */
       }
     },
+    screens: {
+      
+      'tablet': '801px',
+      // => @media (min-width: 801) { ... }
+
+      'laptop': '1201px',
+      // => @media (min-width: 1201px) { ... }
+
+      'desktop': '1550px',
+      // => @media (min-width: 1550px) { ... }
+    },
   },
   plugins: [],
 }
