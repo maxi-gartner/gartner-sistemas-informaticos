@@ -82,7 +82,7 @@ export default function Navbar() {
                 <nav>
                   <ul className="space-y-2">
                     <li>
-                      <a href="#" className="block py-2 px-4">Inicio</a>
+                      <a href="#" className="block py-2 px-4">Inicio</a> 
                     </li>
                     <li>
                       <a href="#" className="block py-2 px-4">Perfil</a>
