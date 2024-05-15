@@ -22,7 +22,7 @@ module.exports = {
       
       'tablet': '801px',
       // => @media (min-width: 801) { ... }   
-
+ 
       'laptop': '1201px',
       // => @media (min-width: 1201px) { ... }
 
