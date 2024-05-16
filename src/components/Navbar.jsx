@@ -1,6 +1,7 @@
 import { Bars3Icon,} from '@heroicons/react/24/outline'
 import logo from '../assets/Logo-GSI-CORTO.jpg'
 import { useState } from 'react'
+import { Link as Anchor } from 'react-router-dom'
 
 export default function Navbar() {
   const navigation = [
@@ -25,7 +26,9 @@ export default function Navbar() {
     <div>
           <nav className="text-black h-16 w-full bg-[#F2F2F2] fixed z-40">
             <div className="absolute w-full py-2 flex justify-end px-4 tablet:justify-center tablet:mx-0">
-              <img className="h-12 w-auto rounded-full" src={logo} alt="G-S-I Company"/>
+              <Anchor to={"/"} className="flex items-center z-50">
+                <img className="h-12 w-auto rounded-full" src={logo} alt="G-S-I Company"/>
+              </Anchor>
             </div>
 
             <div className="mx-auto w-full px-2 sm:px-6 lg:px-8 z-30" style={{zIndex: open ? '0' : '50'}}>
@@ -41,7 +44,7 @@ export default function Navbar() {
                   <div className="hidden sm:ml-6 sm:block">
                     <div className="flex items-center h-12">
                       {navigation.map((item) => (
-                        <a
+                        <Anchor
                           key={item.name}
                           href={item.href}
                           className={classNames(
@@ -51,7 +54,7 @@ export default function Navbar() {
                           aria-current={item.current ? 'page' : undefined}
                         >
                           {item.name}
-                        </a>
+                        </Anchor>
                       ))}
                     </div>
                   </div>
@@ -82,13 +85,22 @@ export default function Navbar() {
                 <nav>
                   <ul className="space-y-2">
                     <li>
-                      <a href="#" className="block py-2 px-4">Inicio</a> 
+                      <Anchor to={"/"} className="block py-2 px-4" onClick={handleClick}>Inicio</Anchor> 
                     </li>
                     <li>
-                      <a href="#" className="block py-2 px-4">Perfil</a>
+                      <Anchor to={"/sistemas"} className="block py-2 px-4" onClick={handleClick}>Sistemas de Ventas</Anchor> 
                     </li>
                     <li>
-                      <a href="#" className="block py-2 px-4">Configuración</a>
+                      <Anchor to={"/mobileApp"} className="block py-2 px-4" onClick={handleClick}>Desarrollos Web</Anchor> 
+                    </li>
+                    <li>
+                      <Anchor to={"/webApp"} className="block py-2 px-4" onClick={handleClick}>App Moviles</Anchor> 
+                    </li>
+                    <li>
+                      <Anchor href="#" className="block py-2 px-4" onClick={handleClick}>Perfil</Anchor>
+                    </li>
+                    <li>
+                      <Anchor href="#" className="block py-2 px-4" onClick={handleClick}>Configuración</Anchor>
                     </li>
                     {/* Agrega más enlaces según sea necesario */}
                   </ul>

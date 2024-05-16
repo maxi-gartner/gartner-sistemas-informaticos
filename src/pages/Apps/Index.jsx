@@ -1,14 +1,14 @@
 import { useState } from 'react';
+import { Link as Anchor } from 'react-router-dom'
 
 export default function Index() {
     const [hoveredVtas, setHoveredVtas] = useState(false);
     const [hoveredAppMovil, setHoveredAppMovil] = useState(false);
     const [hoveredWeb, setHoveredWeb] = useState(false);
     return (
-    <div>
-        <body className="h-full mt-10">
+        <div className="h-full mt-10">
             <div className="flex justify-evenly relative w-full flex-wrap">
-                <div className="flex flex-col pt-5 mx-2 ">
+                <Anchor to="/sistemas" className="flex flex-col pt-5 mx-2 ">
                     <div className={`w-full max-w-sm rounded-xl min-h-16 sm:min-h-auto h-[8rem] relative ${hoveredVtas ? 'translate-y-[-2.3rem] tablet:translate-y-0 z-40' : ''} , transition-transform duration-300`}>
                     <h1 className={`text-black text-3xl p-5 text-center 
                                     ${hoveredVtas ? 'tablet:text-transparent tablet:transition-colors tablet:duration-300' : ''}`}>Sistemas de gestión empresarial</h1>
@@ -27,8 +27,8 @@ export default function Index() {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="flex flex-col pt-5">
+                </Anchor>
+                <Anchor to="/mobileApp"  className="flex flex-col pt-5">
                     <div className={`w-full max-w-sm rounded-xl min-h-16 sm:min-h-auto h-[8rem] relative ${hoveredAppMovil ? 'translate-y-[-2.3rem] tablet:translate-y-0 z-40' : ''} , transition-transform duration-300`}>
                     <h1 className={`text-black text-3xl p-5 text-center 
                                     ${hoveredAppMovil ? 'tablet:text-transparent tablet:transition-colors tablet:duration-300' : ''}`}>Aplicaciones<br></br> móviles</h1>
@@ -47,8 +47,8 @@ export default function Index() {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="flex flex-col pt-5 mx-2">
+                </Anchor>
+                <Anchor to="/webApp"  className="flex flex-col pt-5 mx-2">
                 <div className={`w-full max-w-sm rounded-xl min-h-16 sm:min-h-auto h-[8rem] relative ${hoveredWeb ? 'translate-y-[-2.3rem] tablet:translate-y-0 z-40' : ''} , transition-transform duration-300`}>
                                 <h1 className={`text-black text-3xl p-5 text-center 
                                             ${hoveredWeb ? 'tablet:text-transparent tablet:transition-colors tablet:duration-300' : ''}`}>Desarrollos <br></br> web</h1>
@@ -67,9 +67,8 @@ export default function Index() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </Anchor>
             </div>
-        </body>
-    </div>
+        </div>
     )
 }
