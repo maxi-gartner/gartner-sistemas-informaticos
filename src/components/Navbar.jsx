@@ -14,7 +14,7 @@ export default function Navbar() {
     return classes.filter(Boolean).join(' ')
   }
 
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(true)
 
   const handleClick = () => {
     setOpen(!open)
@@ -23,12 +23,12 @@ export default function Navbar() {
 
   return (
     <div>
-          <nav className="text-black h-16">
+          <nav className="text-black h-16 w-full bg-[#F2F2F2] fixed z-40">
             <div className="absolute w-full py-2 flex justify-end px-4 tablet:justify-center tablet:mx-0">
               <img className="h-12 w-auto rounded-full" src={logo} alt="G-S-I Company"/>
             </div>
 
-            <div className="mx-auto w-full px-2 sm:px-6 lg:px-8 z-50" style={{zIndex: open ? '0' : '50'}}>
+            <div className="mx-auto w-full px-2 sm:px-6 lg:px-8 z-30" style={{zIndex: open ? '0' : '50'}}>
               <div className="flex h-16 items-center justify-between relative">
                 <div className="flex items-center sm:hidden pr-4 pb-4">
                   {/* Mobile menu button */}
@@ -68,7 +68,7 @@ export default function Navbar() {
             </div>
             
             {/* Menu de navegación */}
-            <div className='absolute w-full  h-full bg-black bg-opacity-80 z-40 px-2' style={{display: open ? 'none' : 'block'}}>
+            <div className=' w-full  h-full bg-black bg-opacity-80 z-40 px-2 fixed' style={{display: open ? 'none' : 'block'}}>
               <div className="bg-[#F2F2F2] text-black w-64 min-h-[50%] fixed top-0 left-0 overflow-y-auto pt-1 rounded-r-xl">
                 <button className="relative inline-flex items-center justify-center rounded-md p-2 ml-2  hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" onClick={handleClick}>
                     <span className="sr-only">Open main menu</span>

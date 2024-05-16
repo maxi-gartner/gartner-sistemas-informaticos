@@ -6,7 +6,7 @@ export default function Index() {
     const [hoveredWeb, setHoveredWeb] = useState(false);
     return (
     <div>
-        <body className="h-full">
+        <body className="h-full mt-10">
             <div className="flex justify-evenly relative w-full flex-wrap">
                 <div className="flex flex-col pt-5 mx-2 ">
                     <div className={`w-full max-w-sm rounded-xl min-h-16 sm:min-h-auto h-[8rem] relative ${hoveredVtas ? 'translate-y-[-2.3rem] tablet:translate-y-0 z-40' : ''} , transition-transform duration-300`}>

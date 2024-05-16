@@ -12,7 +12,7 @@ function App() {
     <>
       <div className="bg-[#F2F2F2] h-full">
         <div className="min-h-screen overflow-hidden">
-          <Navbar />
+          <Navbar/>
           <Index />
           </div>
           <Footer />
