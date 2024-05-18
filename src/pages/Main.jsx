@@ -9,7 +9,7 @@ export default function Main() {
       <div className="bg-[#F2F2F2] h-full">
         <div className="min-h-screen overflow-hidden">
           <Navbar/>
-          <Outlet/>
+          <Outlet/> 
           </div>
           <Footer />
       </div>
