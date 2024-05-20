@@ -12,7 +12,7 @@ export default function Main() {
           <Outlet/> 
           </div>
           <Footer />
-      </div>
+      </div> 
     </>
   )
 }
