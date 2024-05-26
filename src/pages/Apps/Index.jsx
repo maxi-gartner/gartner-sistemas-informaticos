@@ -28,7 +28,7 @@ export default function Index() {
                         </div>
                     </div>
                 </Anchor>
-                <Anchor to="/mobileApp"  className="flex flex-col pt-5">
+                <Anchor to="/mobileApp"  className="flex flex-col pt-5"> 
                     <div className={`w-full max-w-sm rounded-xl min-h-16 sm:min-h-auto h-[8rem] relative ${hoveredAppMovil ? 'translate-y-[-2.3rem] tablet:translate-y-0 z-40' : ''} , transition-transform duration-300`}>
                     <h1 className={`text-black text-3xl p-5 text-center 
                                     ${hoveredAppMovil ? 'tablet:text-transparent tablet:transition-colors tablet:duration-300' : ''}`}>Aplicaciones<br></br> móviles</h1>
