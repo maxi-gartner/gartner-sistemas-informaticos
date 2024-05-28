@@ -3,7 +3,7 @@ import Index from './pages/Apps/Index'
 
 function App() {
   return (
-      <>
+      <> 
         <Index/>
       </>
   )
