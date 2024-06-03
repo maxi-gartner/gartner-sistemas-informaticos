@@ -6,5 +6,5 @@ export default function DesarrollosWeb() {
       <h1>Desarrollos Web</h1>
     </div>
   )  
-}
+} 
  
