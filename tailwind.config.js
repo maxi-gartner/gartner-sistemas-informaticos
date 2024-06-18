@@ -30,5 +30,7 @@ module.exports = {
       // => @media (min-width: 1550px) { ... }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar')
+  ],
 }
