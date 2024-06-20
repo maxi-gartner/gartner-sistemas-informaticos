@@ -27,7 +27,7 @@ export default function WebApp() {
                           <div className="flex flex-col justify-center items-center p-10 pb-16">
                               <h2 className="text-white text-xl">
                                   {/* Texto */}
-                              </h2>
+                              </h2> 
                           </div>
                       </div>
                   </div>
