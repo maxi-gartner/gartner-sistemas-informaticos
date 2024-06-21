@@ -28,7 +28,7 @@ export default function WebApp() {
                               <h2 className="text-white text-xl">
                                   {/* Texto */}
                               </h2> 
-                          </div>
+                          </div> 
                       </div>
                   </div>
               </Anchor>
