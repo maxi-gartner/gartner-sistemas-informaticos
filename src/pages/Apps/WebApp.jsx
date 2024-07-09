@@ -21,7 +21,7 @@ export default function WebApp() {
                                   scrollbar scrollbar-thumb-fuchsia-800 scrollbar-track-black`
                                   }
                                   onMouseEnter={() => setHoveredVtas(true)}  
-                                  onMouseLeave={() => setHoveredVtas(false)}> 
+                                  onMouseLeave={() => setHoveredVtas(false)}>  
                       <img src="public/bug-fix.png" className="object-cover" alt="" />
                       <div className='w-full h-full bg-black absolute top-0 left-0 flex justify-center items-center bg-opacity-40 hover:bg-opacity-0'>
                           <div className="flex flex-col justify-center items-center p-10 pb-16">
