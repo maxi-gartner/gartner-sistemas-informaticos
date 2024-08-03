@@ -20,7 +20,7 @@ export default function WebApp() {
                                   ${hoveredVtas ? 'scale-125 tablet:translate-x-14 z-40' : ''} , transition-transform duration-300 overflow-auto 
                                   scrollbar scrollbar-thumb-fuchsia-800 scrollbar-track-black`
                                   }
-                                  onMouseEnter={() => setHoveredVtas(true)}  
+                                  onMouseEnter={() => setHoveredVtas(true)}   
                                   onMouseLeave={() => setHoveredVtas(false)}>  
                       <img src="public/bug-fix.png" className="object-cover" alt="" />
                       <div className='w-full h-full bg-black absolute top-0 left-0 flex justify-center items-center bg-opacity-40 hover:bg-opacity-0'>
