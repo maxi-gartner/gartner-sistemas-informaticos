@@ -22,7 +22,7 @@ export default function WebApp() {
                                   }
                                   onMouseEnter={() => setHoveredVtas(true)}   
                                   onMouseLeave={() => setHoveredVtas(false)}>  
-                      <img src="public/bug-fix.png" className="object-cover" alt="" />
+                      <img src="public/bug-fix.png" className="object-cover" alt="" /> 
                       <div className='w-full h-full bg-black absolute top-0 left-0 flex justify-center items-center bg-opacity-40 hover:bg-opacity-0'>
                           <div className="flex flex-col justify-center items-center p-10 pb-16">
                               <h2 className="text-white text-xl"> 
