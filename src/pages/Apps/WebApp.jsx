@@ -124,7 +124,7 @@ export default function WebApp() {
                                   ${
                                     hoveredWeb
                                       ? "scale-125 laptop:translate-x-[-4rem] z-40"
-                                      : ""
+                                      : "" 
                                   } transition-transform duration-300`}
             onMouseEnter={() => setHoveredWeb(true)}
             onMouseLeave={() => setHoveredWeb(false)}
