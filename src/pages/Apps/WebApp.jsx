@@ -128,7 +128,7 @@ export default function WebApp() {
                                   } transition-transform duration-300`}
             onMouseEnter={() => setHoveredWeb(true)}
             onMouseLeave={() => setHoveredWeb(false)}
-          >
+          > 
             <img
               src="https://i.pinimg.com/originals/15/ea/80/15ea804cbed52b3c9e4f7119bf50ebb4.png"
               className="w-full h-full object-cover rounded-xl"
