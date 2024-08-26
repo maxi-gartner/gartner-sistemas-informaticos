@@ -117,7 +117,7 @@ export default function WebApp() {
                                           }`}
             >
               Desarrollos <br></br> web
-            </h1> 
+            </h1>
           </div>
           <div
             className={`w-full max-w-sm bg-white rounded-xl min-h-96 sm:min-h-auto h-[35rem] border-4 border-black relative mb-24 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]
@@ -128,7 +128,7 @@ export default function WebApp() {
                                   } transition-transform duration-300`}
             onMouseEnter={() => setHoveredWeb(true)}
             onMouseLeave={() => setHoveredWeb(false)}
-          > 
+          >
             <img
               src="https://i.pinimg.com/originals/15/ea/80/15ea804cbed52b3c9e4f7119bf50ebb4.png"
               className="w-full h-full object-cover rounded-xl"
