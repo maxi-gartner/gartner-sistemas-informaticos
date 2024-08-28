@@ -116,7 +116,7 @@ export default function WebApp() {
                                               : ""
                                           }`}
             >
-              Desarrollos <br></br> web
+              Desarrollos <br></br> web 
             </h1> 
           </div>
           <div
