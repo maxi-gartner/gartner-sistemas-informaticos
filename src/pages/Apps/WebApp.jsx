@@ -116,8 +116,8 @@ export default function WebApp() {
                                               : ""
                                           }`}
             >
-              Desarrollos <br></br> web  
-            </h1> 
+              Desarrollos <br></br> web
+            </h1>
           </div>
           <div
             className={`w-full max-w-sm bg-white rounded-xl min-h-96 sm:min-h-auto h-[35rem] border-4 border-black relative mb-24 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]
